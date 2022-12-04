@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://smfgroza.github.io</id>
+    <title>GROZA&apos;s Blog</title>
+    <updated>2022-12-04T04:27:46.136Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://smfgroza.github.io"/>
+    <link rel="self" href="https://smfgroza.github.io/atom.xml"/>
+    <subtitle>无所谓，我会开扌圭</subtitle>
+    <logo>https://smfgroza.github.io/images/avatar.png</logo>
+    <icon>https://smfgroza.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, GROZA&apos;s Blog</rights>
+</feed>
