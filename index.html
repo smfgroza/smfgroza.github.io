@@ -7,6 +7,13 @@
 	border-radius:10px;
 }
 
+.style2{
+	border: 3px;
+	border-radius:10px;
+	background-color:#FCD217;
+	font-size:28px;
+}
+
 .logo{
 	border:1px;
 	border-radius:10px;
@@ -31,7 +38,16 @@
 }
 
 .ffont:hover{
-	font-size:22px;
+	font-size:23px;
+}
+
+.ffont1{
+	font-size: 28px;
+	transition:font-size 0.5s;
+}
+
+.ffont1:hover{
+	font-size:32px;
 }
 
 a:link {
@@ -47,6 +63,7 @@ a:hover {
 a:active {
 	text-decoration: none;
 	font-family: "汉仪文黑-85W";
+	color: #000;
 }
 
 .tfont {
@@ -91,6 +108,20 @@ input::placeholder{
 		font-family: "汉仪文黑-85W";
 }   
 
+.searchbtn {
+	border: 1px solid white;
+    width: 3%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3%;  /* 高度调整 */
+    background-coloe:#DFE1E5;
+    /* 将按钮的左右边框设置为圆弧 */
+    border-radius: 30px; 
+    /* 圆角弧度24px */
+    transition:0.2s;
+	padding-top:0px;
+}
+
 </style>
 
 <script>
@@ -99,128 +130,130 @@ input::placeholder{
 
 <html>
 <head>
-	<title>湖南师大附中课件中心</title>
+<title>湖南师大附中课件中心</title>
 </head>
 <body>
-	<table width="980" cellspacing="10" align="center" height="792" border="0" cellpadding="0" style="border-collapse: collapse; font-family: '汉仪文黑-85W'; font-size: 24px;">
+<table width="980" cellspacing="8" align="center" height="400" border="0" cellpadding="0" style="border-collapse: collapse; font-family: '汉仪文黑-85W'; font-size: 24px; color: #000000;">
 	<tbody>
 	<tr>
 	  <td height="117" bgcolor="#005FAF" class="logo"><a href="http://www.hnsdfz.org/" target="_blank"><img src="logo2.png" width="400" height="100" /></a></td>
-	  <td>&nbsp;</td>
 	  </tr>
 	<tr>
-	  <td height="71" align="center" valign="middle">湖南师大附中课件中心</td>
+	  <td height="46" align="center" valign="middle">湖南师大附中课件中心</td>
+	  </tr>
+	<tr align="center">
+	  <td height="30">      
+	    <form method="get" action="https://www.baidu.com/s?&wd=">
+	      <p>
+	        <input name="wd" type="text" class="search" id="box" placeholder="Bing搜索亿下" size="100" />
+          </p>
+        </form>
+      
 	  <td>&nbsp;</td>
+	  </tr>
+	<tr align="center">
+	  <td height="10" bgcolor="#F8D7DA" class="style1" style="word-spacing:0 ;line-height: 300%; margin-top: 0; margin-bottom: 0;";>
+	    <span style="font-family: '汉仪文黑-85W'; font-size: 18px;"><font color=red>课件中心为老师们提供文件临时存储空间,重要数据请勿存放,信息中心将每月定时清空!</font></span>      </td>
 	  </tr>
 	<tr>
-	  <td height="70" align="center"><input name="wd" type="text" class="search" id="box" placeholder="百度亿下，你就知道" size="100" /></td>
-	  <td>&nbsp;</td>
-	  </tr>
-	<tr>
-	  <td height="77" align="center">
-      <div class="searchbar">
-          <form id="form1" name="form1" method="get" action="https://www.baidu.com/s?&wd=">
-            <p>&nbsp;</p>
-          </form>
-      </div>
-      </td>
-	  <td>&nbsp;</td>
-	  </tr>
-	<tr><td width="1000" height="10" colspan="2" align="center" bgcolor="#F8D7DA" class="style1" style="word-spacing:0 ;line-height: 300%; margin-top: 0; margin-bottom: 0;";>
-		<span style="font-family: '汉仪文黑-85W'; font-size: 18px;"><font color=red>课件中心为老师们提供文件临时存储空间,重要数据请勿存放,信息中心将每月定时清空!</font></span>
-	</td></tr>
-	<tr><td width="1000" height="10" colspan="2" align="center" bgcolor="#EFEFEF" class="style1" style="word-spacing: 0; line-height: 250%; margin-top: 0; margin-bottom: 0">
-	 	<span class="bstyle">
-            <span class="tfont">
-            <a class="afive" target="_blank" href="ftp://de:de@192.168.0.8/">
-            <font class = "ffont" color="#000000">&nbsp;校领导&nbsp;</font></a></span></span>
-            <span class="tfont">
-            <span class="bstyle">
-            <a class="afive" target="_blank" href="ftp://jydd:jydd@192.168.0.8/">
-            <font class = "ffont" color="#000000">&nbsp;教育督导室&nbsp;</font></a></span>
-            <span class="bstyle">
-            <a class="afive" target="_blank" href="ftp://xb:xb@192.168.0.8/">
-            <font class = "ffont" color="#000000">&nbsp;校办公室&nbsp;</font></a></span>
-            <span class="bstyle">
-            <a class="afive" target="_blank" href="ftp://dw:dw@192.168.0.8/">
-            <font class = "ffont" color="#000000">&nbsp;党委办公室&nbsp;</font></a></span>
-            <span class="bstyle">
-            <a class="afive" target="_blank" href="ftp://jwc:jwc@192.168.0.8/">
-            <font class = "ffont" color="#000000">&nbsp;课程与教学处&nbsp;</font></a></span>
-            <span class="bstyle">
-            <a class="afive" target="_blank" href="ftp://jks:jks@192.168.0.8/">
-            <font class = "ffont" color="#000000">&nbsp;科研与教师发展处&nbsp;</font></a></span>
-            <span class="bstyle">
-            <a class="afive" target="_blank" href="ftp://xgb:xgb@192.168.0.8/">
-            <font class = "ffont" color="#000000">&nbsp;德育与学生发展处&nbsp;</font></a></span>
-            </span>
-		<div align="center">
-        <span class="tfont">
-            <span class="bstyle">
+	  <td height="10" align="center" bgcolor="#EFEFEF" class="style1" style="word-spacing: 0; line-height: 250%; margin-top: 0; margin-bottom: 0">
+	    <span class="bstyle">
+	      <span class="tfont">
+          <a class="afive" target="_blank" href="ftp://de:de@192.168.0.8/">
+          <font class = "ffont" color="#000000">&nbsp;校领导&nbsp;</font></a></span></span>
+	    <span class="tfont">
+        <span class="bstyle">
+        <a class="afive" target="_blank" href="ftp://jydd:jydd@192.168.0.8/">
+        <font class = "ffont" color="#000000">&nbsp;教育督导室&nbsp;</font></a></span>
+        <span class="bstyle">
+        <a class="afive" target="_blank" href="ftp://xb:xb@192.168.0.8/">
+        <font class = "ffont" color="#000000">&nbsp;校办公室&nbsp;</font></a></span>
+        <span class="bstyle">
+        <a class="afive" target="_blank" href="ftp://dw:dw@192.168.0.8/">
+        <font class = "ffont" color="#000000">&nbsp;党委办公室&nbsp;</font></a></span>
+        <span class="bstyle">
+        <a class="afive" target="_blank" href="ftp://jwc:jwc@192.168.0.8/">
+        <font class = "ffont" color="#000000">&nbsp;课程与教学处&nbsp;</font></a></span>
+        <span class="bstyle">
+        <a class="afive" target="_blank" href="ftp://jks:jks@192.168.0.8/">
+        <font class = "ffont" color="#000000">&nbsp;科研与教师发展处&nbsp;</font></a></span>
+        <span class="bstyle">
+        <a class="afive" target="_blank" href="ftp://xgb:xgb@192.168.0.8/">
+        <font class = "ffont" color="#000000">&nbsp;德育与学生发展处&nbsp;</font></a></span>
+        </span>
+	    <div align="center">
+	      <span class="tfont">
+	        <span class="bstyle">
             <a class="afive" target="_blank" href="ftp://kjcx:kjcx@192.168.0.8/">
             <font class = "ffont" color="#000000">&nbsp;科技创新处&nbsp;</font></a></span>
-
-            <span class="bstyle">
+	        
+	        <span class="bstyle">
             <a class="afive" target="_blank" href="ftp://cwk:cwk@192.168.0.8/">
             <font class = "ffont" color="#000000">&nbsp;财务处&nbsp;</font></a></span>
-            <span class="bstyle">
+	        <span class="bstyle">
             <a class="afive" target="_blank" href="ftp://hq:hq@192.168.0.8/">
             <font class = "ffont" color="#000000">&nbsp;后勤服务和安全保卫中心&nbsp;</font></a></span>
-            <span class="bstyle">
+	        <span class="bstyle">
             <a class="afive" target="_blank" href="ftp://xxzx:xxzx@192.168.0.8/">
             <font class = "ffont" color="#000000">&nbsp;信息技术中心&nbsp;</font></a></span>
-            <span class="bstyle">
+	        <span class="bstyle">
             <a class="afive" target="_blank" href="ftp://gh:gh@192.168.0.8/">
             <font class = "ffont" color="#000000">&nbsp;工会&nbsp;</font></a></span>
-            <span class="bstyle">
+	        <span class="bstyle">
             <a class="afive" target="_blank" href="ftp://tw:tw@192.168.0.8/">
             <font class = "ffont" color="#000000">&nbsp;团委&nbsp;</font></a></span>
-  		</span></div></td></tr>
-		<span class="tfont"></span>
+      </span></div></td>
+	  </tr>
+	  <span class="tfont"></span>
 		<p>&nbsp;</p>
 		<p>
-	<tr><td width="1000" height="44" colspan="2" bgcolor="#FFF" style="word-spacing: 0; line-height: 250%; margin-top: 0; margin-bottom: 0">
-	<div align="center">
-  		<span class="tfont"><span class="bstyle">
-		<a class="afive" target="_blank" href="ftp://yuwen:yuwen@192.168.0.8/">
-  		<font class = "ffont" color="#000000">&nbsp;语文组&nbsp;</font></a></span>
-  		<span class="bstyle">
-		<a class="afive" target="_blank" href="ftp://shuxue:shuxue@192.168.0.8/">
-    	<font class = "ffont" color="#000000">&nbsp;数学组&nbsp;</font></a></span>
-  		<span class="bstyle">
-		<a class="afive" target="_blank" href="ftp://yingyu:yingyu@192.168.0.8/">
-    	<font class = "ffont" color="#000000">&nbsp;英语组&nbsp;</font></a></span>
-  		<span class="bstyle">
-		<a class="afive" target="_blank" href="ftp:/wuli:wuli@192.168.0.8/">
-    	<font class = "ffont" color="#000000">&nbsp;物理组&nbsp;</font></a></span>
-  		<span class="bstyle">
-		<a class="afive" target="_blank" href="ftp://huaxue:huaxue@192.168.0.8/">
-    	<font class = "ffont" color="#000000">&nbsp;化学组&nbsp;</font></a></span>
-  		<span class="bstyle">
-		<a class="afive" target="_blank" href="ftp://shengwu:shengwu@192.168.0.8/">
-    	<font class = "ffont" color="#000000">&nbsp;生物组&nbsp;</font></a></span>
-		<span class="bstyle">
-		<a class="afive" target="_blank" href="ftp://dili:dili@192.168.0.8/">
-    	<font class = "ffont" color="#000000">&nbsp;地理组&nbsp;</font></a></span>
-    	<span class="bstyle">
-		<a class="afive" target="_blank" href="ftp://lishi:lishi@192.168.0.8/">
-    	<font class = "ffont" color="#000000">&nbsp;历史组&nbsp;</font></a></span>
-    	<span class="bstyle">
-		<a class="afive" target="_blank" href="ftp://zhengzhi:zhengzhi@192.168.0.8/">
-    	<font class = "ffont" color="#000000">&nbsp;政治组&nbsp;</font></a></span>
-	</span></div></td></tr>
-	<tr><td width="1000" height="10" colspan="2" align="center" bgcolor="#EFEFEF" class="style1" style="word-spacing: 0; line-height: 250%; margin-top: 0; margin-bottom: 0; 	font-family: '汉仪文黑-85W';">
-        <span class="bstyle">
+	<tr>
+	  <td height="44" bgcolor="#FFF" style="word-spacing: 0; line-height: 250%; margin-top: 0; margin-bottom: 0">
+	    <div align="center">
+	      <span class="tfont"><span class="bstyle">
+          <a class="afive" target="_blank" href="ftp://yuwen:yuwen@192.168.0.8/">
+          <font class = "ffont" color="#000000">&nbsp;语文组&nbsp;</font></a></span>
+          <span class="bstyle">
+          <a class="afive" target="_blank" href="ftp://shuxue:shuxue@192.168.0.8/">
+          <font class = "ffont" color="#000000">&nbsp;数学组&nbsp;</font></a></span>
+          <span class="bstyle">
+          <a class="afive" target="_blank" href="ftp://yingyu:yingyu@192.168.0.8/">
+          <font class = "ffont" color="#000000">&nbsp;英语组&nbsp;</font></a></span>
+          <span class="bstyle">
+          <a class="afive" target="_blank" href="ftp:/wuli:wuli@192.168.0.8/">
+          <font class = "ffont" color="#000000">&nbsp;物理组&nbsp;</font></a></span>
+          <span class="bstyle">
+          <a class="afive" target="_blank" href="ftp://huaxue:huaxue@192.168.0.8/">
+          <font class = "ffont" color="#000000">&nbsp;化学组&nbsp;</font></a></span>
+          <span class="bstyle">
+          <a class="afive" target="_blank" href="ftp://shengwu:shengwu@192.168.0.8/">
+          <font class = "ffont" color="#000000">&nbsp;生物组&nbsp;</font></a></span>
+          <span class="bstyle">
+          <a class="afive" target="_blank" href="ftp://dili:dili@192.168.0.8/">
+          <font class = "ffont" color="#000000">&nbsp;地理组&nbsp;</font></a></span>
+          <span class="bstyle">
+          <a class="afive" target="_blank" href="ftp://lishi:lishi@192.168.0.8/">
+          <font class = "ffont" color="#000000">&nbsp;历史组&nbsp;</font></a></span>
+          <span class="bstyle">
+          <a class="afive" target="_blank" href="ftp://zhengzhi:zhengzhi@192.168.0.8/">
+          <font class = "ffont" color="#000000">&nbsp;政治组&nbsp;</font></a></span>
+      </span></div></td>
+    </tr>
+	<tr>
+	  <td height="10" align="center" bgcolor="#EFEFEF" class="style1" style="word-spacing: 0; line-height: 250%; margin-top: 0; margin-bottom: 0; 	font-family: '汉仪文黑-85W';">
+	    <span class="bstyle">
         <a class="afive" target="_blank" href="ftp://dyxq:dyxq@192.168.0.8/">
         <font class = "ffont" color="#000000">&nbsp;集团校&nbsp;</font></a></span>
-        <span class="bstyle">
+	    <span class="bstyle">
         <a class="afive" target="_blank" href="ftp://zm:zm@192.168.0.8/">
-        <font class = "ffont" color="#000000">&nbsp;国际部&nbsp;</font></a></span>
-        </td></tr>
+        <font class = "ffont" color="#000000">&nbsp;国际部&nbsp;</font></a></span>      </td>
+	  </tr>
 	<tr>
-	  <td colspan="2"></p>
-	<tr>
-	  <td colspan="2"></tbody>
-</table>
+	  <td height="20" align="center" valign="middle" class="style2"><a href="ftp://192.168.0.25/kjzx/NSA免疫工具.exe" target="_blank"><font class="ffont1" color="#000000">NSA免疫工具下载</font></a>          
+  <tr>
+    <td height="20" align="center" valign="middle"><p><span></span></p>
+      <p><a target="_blank" href="http://192.168.0.25/kjzx/ftp.reg" class="ffont">无法访问课件中心？点这里</a></p>
+    <tr align="center">
+<td>      </tbody></table>
 </body>
 </html>
