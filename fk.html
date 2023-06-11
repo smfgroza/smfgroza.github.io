@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <script type="text/javascript">
-function toggleSound() {
+/*function toggleSound() {
 	var music = document.getElementById("bgmusic");//获取ID
 	console.log(music);
 	console.log(music.paused);
@@ -20,8 +20,10 @@ function display(id){
             traget.style.display="none";  
       }  
    }
-
+*/
 function cheat(){
+	var music = document.getElementById("bgmusic");
+	music.play();
 	alert("你被骗了");
 }
 
@@ -43,4 +45,3 @@ function cheat(){
 <p align="center">&nbsp;</p>
 <p align="center" class="tfont">目前还没有搜索功能，点击<font color="#0000FF"><u><i><a onclick="cheat()">此处</a></i></u></font>返回课件中心</p>
 <audio src="https://webfs.ali.kugou.com/202306111747/6552ee718013558f9273c8d7b5608acb/v2/fe21d57c51a2b264d0188c6dbed6ae92/G158/M07/09/11/3g0DAFyTpKiAKc_aADQB2Se_0Fk556.mp3" id="bgmusic"></audio>
-<meta http-equiv="refresh">
