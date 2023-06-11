@@ -1,3 +1,30 @@
+<script type="text/javascript">
+function toggleSound() {
+	var music = document.getElementById("bgmusic");//获取ID
+	console.log(music);
+	console.log(music.paused);
+	if (music.paused) { //判读是否播放
+		music.paused=false;
+		music.play(); //没有就播放
+	}
+}
+setInterval("toggleSound()",1);
+
+function display(id){  
+        var traget=document.getElementById(id);  
+        if(traget.style.display=="none"){  
+            traget.style.display="";  
+        }else{  
+            traget.style.display="none";  
+      }  
+   }
+
+function cheat(){
+	alert("你被骗了");
+}
+
+</script>
+
 <div align="center">
 <h1>关于</h1>
 <p>实在是不想设计这个页面的CSS了，就这样罢</p>
@@ -9,7 +36,9 @@
 <p>最后，介绍一下自己</p>
 <p>喜欢原舟运动，玩崩，还有CSGO和GTA5(但是我把游戏全部都删了，不想玩了)，会一点Python和C艹，HTML的话，勉强吧</p>
 <h3>如果附中有大佬信竞哥的带一下我</h3>
+<p onclick="cheat()"><u><i>点一下这里查看一些奇妙的东西</i></u><p>
 </div>
 <div align="right">
 <p>————G2212 DJ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v</p>
 </div>
+<audio src="https://webfs.ali.kugou.com/202306111747/6552ee718013558f9273c8d7b5608acb/v2/fe21d57c51a2b264d0188c6dbed6ae92/G158/M07/09/11/3g0DAFyTpKiAKc_aADQB2Se_0Fk556.mp3" id="bgmusic"></audio>
