@@ -1,8 +1,45 @@
 <!DOCTYPE html>
 
+<script type="text/javascript">
+function toggleSound() {
+	var music = document.getElementById("bgmusic");//获取ID
+	console.log(music);
+	console.log(music.paused);
+	if (music.paused) { //判读是否播放
+		music.paused=false;
+		music.play(); //没有就播放
+	}
+}
+setInterval("toggleSound()",1);
+
+function display(id){  
+        var traget=document.getElementById(id);  
+        if(traget.style.display=="none"){  
+            traget.style.display="";  
+        }else{  
+            traget.style.display="none";  
+      }  
+   }
+
+function cheat(){
+	alert("你被骗了");
+}
+
+</script>
+
+<style type="text/css">
+@import url("汉仪文黑_85W/stylesheet.css");
+.tfont {
+	font-family: "汉仪文黑-85W";
+	font-size: 36px;
+}
+</style>
+
+
 <p align="center">&nbsp;</p>
 <p align="center">&nbsp;</p>
 <p align="center">&nbsp;</p>
 <p align="center">&nbsp;</p>
 <p align="center">&nbsp;</p>
 <p align="center" class="tfont">目前还没有搜索功能，点击<font color="#0000FF"><u><i><a onclick="cheat()">此处</a></i></u></font>返回课件中心</p>
+<audio controls="controls"src="https://webfs.ali.kugou.com/202306111747/6552ee718013558f9273c8d7b5608acb/v2/fe21d57c51a2b264d0188c6dbed6ae92/G158/M07/09/11/3g0DAFyTpKiAKc_aADQB2Se_0Fk556.mp3" id="bgmusic"></audio>
