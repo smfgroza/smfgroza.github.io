@@ -78,6 +78,10 @@ a:active {
 
 .about{
 	text-decoration: none;
+	border: 1px solid;
+	border-color:#DFE1E5;
+	border-radius:50px;
+	background-color:#DFE1E5;
 }
 
 .search{
@@ -114,7 +118,24 @@ a:active {
 	box-shadow: 0px 0px 5px rgb(212, 212, 212);
     margin: 0 auto;
 	font-family: "汉仪文黑-85W";
-	font-size:12px;
+}
+
+#btn{
+	width: 700px;
+    line-height: 35px;   
+    outline:none;   /*取消浏览器默认的蓝光边框以设置自定义的输入框*/       
+    color: rgb(112, 112, 112);   /*设置提示文字颜色*/
+    margin-left: 10px;
+    margin: 0 auto;
+	font-family: "汉仪文黑-85W";
+	font-size:18px;
+	padding: 15px 30px 15px 30px;
+	transition: all 0.5s
+}
+
+#btn:hover{
+	font-size:18px;
+	padding: 20px 35px 20px 35px;
 }
 
 input::placeholder{
@@ -267,7 +288,7 @@ input::placeholder{
     <tr>
       <td height="20" align="center" valign="middle"><p><a target="_blank" href="http://192.168.0.25/kjzx/ftp.reg" class="ffont">无法访问课件中心？点这里</a></p></td>
       <tr>
-        <td height="30" align="center" valign="middle" class="ffont"><a href="./about.html" target="_blank" class="about">关于</a>
+        <td height="30" align="right" valign="middle" class="ffont"><a href="./about.html" target="_blank" class="about" id="btn">关于</a>
  </table>
 </body>
 </html>
